@@ -3,4 +3,4 @@
 api_token=${duckdns}
 
 echo url="https://www.duckdns.org/update?domains=skilbjo&token=$api_token=" | \
-  curl -k -o ~/unix/duckdns/duck.log -K -
+  curl -k -o ./duck.log -K -
