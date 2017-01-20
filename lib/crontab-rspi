@@ -1,6 +1,6 @@
 ### variables ##
   SHELL=/bin/bash
-  PATH=/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin
+  PATH=:/bin:/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin
   MAILTO=john.skilbeck@gmail.com
   app_dir="/home/pi/deploy/app/duckdns"
   base_cmd=". /home/pi/.profilelocal"
