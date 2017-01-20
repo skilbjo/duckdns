@@ -2,7 +2,7 @@
   PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/pi/bin
   MAILTO=john.skilbeck@gmail.com
   app_dir="/home/pi/deploy/app/duckdns"
-  base_cmd=". /home/pi/.profile; cd $app_dir"
+  base_cmd=". /home/pi/.profile; cd ${app_dir}"
 
 
 ## jobs ##
