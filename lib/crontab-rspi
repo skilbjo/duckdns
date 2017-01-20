@@ -7,7 +7,7 @@
 
 ## jobs ##
 #*/5 * * * * pi "$base_cmd" ; ./duck.sh >/dev/null
-* * * * * pi "$base_cmd" ; cd "$app_dir"; ./duck.sh >/dev/null
+* * * * * pi . /home/pi/.profile ; cd "$app_dir"; ./duck.sh >/dev/null
 
 
 ## syntax ##
