@@ -3,11 +3,9 @@
   PATH=:/bin:/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin
   MAILTO=john.skilbeck@gmail.com
   app_dir="/home/pi/deploy/app/duckdns"
-  base_cmd=". /home/pi/.profilelocal"
 
 ## jobs ##
-#*/5 * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; ./duck >/dev/null 2>&1
-* * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; ./duck >/dev/null
+*/5 * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; ./duck >/dev/null 2>&1
 
 
 ## syntax ##
