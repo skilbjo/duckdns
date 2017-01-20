@@ -1,3 +1,6 @@
+#!/bin/bash
+echo "$PATH"
+exit 1
 #!/usr/bin/env bash
 set -euo pipefail
 
