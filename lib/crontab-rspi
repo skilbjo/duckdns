@@ -8,6 +8,7 @@
 
 ## jobs ##
 #*/5 * * * * pi "$base_cmd" ; ./duck.sh >/dev/null
+* * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; env > /tmp/env.output
 * * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; ./duck >/dev/null 2>&1
 #* * * * * pi "$base_cmd" ; cd "$app_dir"; ./duck.sh >/dev/null
 
