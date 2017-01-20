@@ -1,12 +1,12 @@
 ### variables ##
-  PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/skilbjo/bin
+  PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/pi/bin
   MAILTO=john.skilbeck@gmail.com
-  app_dir="/home/skilbjo/deploy/app/duckdns"
+  app_dir="/home/pi/deploy/app/duckdns"
   base_cmd="source $HOME/.profile; cd $app_dir"
 
 
 ## jobs ##
-*/5 * * * * skilbjo cd "$app_dir" ; ./duck.sh >/dev/null
+*/5 * * * * pi "$base_cmd" ; ./duck.sh >/dev/null
 
 
 ## syntax ##
