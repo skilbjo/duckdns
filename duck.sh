@@ -1,5 +1,6 @@
 #!/bin/bash
-echo "$PATH"
+which env
+which bash
 exit 1
 #!/usr/bin/env bash
 set -euo pipefail
