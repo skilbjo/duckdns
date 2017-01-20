@@ -1,4 +1,5 @@
 ### variables ##
+  SHELL=/bin/bash
   PATH=/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
   MAILTO=john.skilbeck@gmail.com
   app_dir="/home/pi/deploy/app/duckdns"
@@ -7,7 +8,7 @@
 
 ## jobs ##
 #*/5 * * * * pi "$base_cmd" ; ./duck.sh >/dev/null
-* * * * * pi . /home/pi/.profilelocal ; echo "$SHELL" ; cd "$app_dir"; ./duck.sh >/dev/null
+* * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; ./duck >/dev/null 2>&1
 #* * * * * pi "$base_cmd" ; cd "$app_dir"; ./duck.sh >/dev/null
 
 
