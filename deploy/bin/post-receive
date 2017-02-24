@@ -13,8 +13,8 @@ cd "$deploy_dir"
 
 ## build steps here ##
 case "$user" in
-  (skilbjo) sudo cp lib/crontab "$cron_dir/$app" ;;
-  (pi) sudo cp lib/crontab-rspi "$cron_dir/$app" ;;
+  (skilbjo) sudo cp deploy/tasks/crontab "$cron_dir/$app" ;;
+  (pi) sudo cp deploy/tasks/crontab-rspi "$cron_dir/$app" ;;
 esac
 
 echo "all done"
