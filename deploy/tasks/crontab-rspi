@@ -1,0 +1,9 @@
+### vars ##
+  SHELL=/bin/bash
+  PATH=:/bin:/usr/bin:/usr/local/bin:/usr/sbin:/usr/local/sbin
+  MAILTO=john.skilbeck@gmail.com
+  app_dir="/home/pi/deploy/app/duckdns"
+  cmd="deploy/bin/run-job"
+
+## jobs ##
+*/5 * * * * pi . /home/pi/.profilelocal ; cd "$app_dir"; $cmd >/dev/null 2>&1
