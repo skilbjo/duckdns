@@ -20,7 +20,3 @@ Run with `/duck`, or `/deploy/bin/run-job`.
 ## Deploy
 
 Add the post-receive hook to your remote git repo. Let it do the work.
-
-
-
-
